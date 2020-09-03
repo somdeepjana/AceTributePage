@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    border: 0;
+    padding: 0;
+
+    width: 100vw;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+
+    width: 100%;
+
+    display: flex;
+    justify-content: flex-end;
+}
+nav > a {
+    margin-left: 2%;
+}
+nav > a:last-child {
+    margin-right: 2%;
+}
+
+#welcome-section{
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}

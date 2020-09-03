@@ -5,14 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Somdeep Jana">
     <title>freecodecamp Responsive WebDesign Projects</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @media (max-width: 480px) {
+            nav{
+                display: flex;
+                flex-flow: column;
+                align-items: center;
+            }
+            nav > a {
+                display: block;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>freecodecamp Responsive WebDesign Projects</h1>
-    <ul>
-        <li><a href="./AceTributePage/index.html">Ace Tribute Page</a></li>
-        <li><a href="./SurveyForm/index.html">Survey Form</a></li>
-        <li><a href="./ProductLanding/index.html">Product Landing Page</a></li>
-        <li><a href="./TechnicalDocumentation/index.html">Technical Documentation</a></li>
-    </ul>
+    <nav id="navbar">
+        <a href="#welcome-section">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contatct">Contatct</a>
+    </nav>
+
+    <main>
+        <section  id="welcome-section">
+            <h1>freecodecamp Responsive WebDesign Projects</h1>
+            <p>A web Developmet Cource</p>
+        </section>
+    
+        <section id="projects">
+            <a href="./AceTributePage/index.html">
+                <figure class="project-tile">
+                    <figcaption>Ace Tribute Page</figcaption>
+                </figure>
+            </a>
+            <a href="./SurveyForm/index.html">
+                <figure class="project-tile">
+                    <figcaption>Survey Form</figcaption>
+                </figure>
+            </a>
+            <a href="./ProductLanding/index.html">
+                <figure class="project-tile">
+                    <figcaption>Product Landing Page</figcaption>
+                </figure>
+            </a>
+            <a href="./TechnicalDocumentation/index.html">
+                <figure class="project-tile">
+                    <figcaption>Technical Documentation</figcaption>
+                </figure>
+            </a>
+        </section>
+
+        <section id="contatct">
+            <div>
+                <header>Let's work together...</header>
+                <p>How do you take your coffee?</p>
+            </div>
+            <a id="profile-link" href="https://github.com/somdeepjana" target="_blank"><i class="fab fa-github-alt"> GitHub</i></a>
+        </section>
+    </main>
+
+    <script src="https://kit.fontawesome.com/28394f4ca3.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
