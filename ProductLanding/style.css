@@ -1,0 +1,55 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+    padding: 0;
+
+    width: 100vw;
+    display: flex;
+    flex-flow: column;
+
+}
+header {
+    display: flex;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+header > div {
+    flex: 1;
+}
+#header-img {
+    width: 100%;
+    object-fit: scale-down;
+}
+header > nav {
+    flex: 2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav > a {
+    padding-left: 5%;
+}
+
+#signup {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-top: 5%;
+}
+#signup > form {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+#submit {
+    margin-top: 2%;
+}
+
+@media (max-width: 600px){
+    #header > div {
+        display: none;
+    }
+}
